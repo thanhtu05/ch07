@@ -1,0 +1,172 @@
+/* =========================================================================
+   I. THIẾT LẬP CHUNG & TYPOGRAPHY
+   ========================================================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Nền nhẹ nhàng */
+}
+
+h1 {
+    color: #007bff; /* Màu xanh nổi bật */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+h2 {
+    color: #495057;
+    margin-top: 15px;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* =========================================================================
+   II. ĐỊNH DẠNG FORM (Dùng cho Register.jsp)
+   ========================================================================= */
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px; /* Chiều rộng cố định cho label */
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+/* Lớp căn chỉnh cho label trên form đăng ký */
+.pad_top {
+    padding-top: 8px; /* Đảm bảo căn chỉnh với input */
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Tính toán padding vào width */
+}
+
+/* =========================================================================
+   III. ĐỊNH DẠNG BẢNG (Dùng cho Cart & Download pages)
+   ========================================================================= */
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9ecef; /* Màu nền cho tiêu đề */
+    color: #495057;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Định dạng đặc biệt cho các cột dữ liệu số trong Giỏ hàng (nếu có) */
+.col-right {
+    text-align: right;
+}
+
+/* =========================================================================
+   IV. NÚT VÀ LIÊN KẾT (BUTTONS & LINKS)
+   ========================================================================= */
+
+/* Định dạng chung cho tất cả các nút submit và thẻ <a> có vai trò nút */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Nút Chính (Primary - Register, Checkout) */
+.btn-primary {
+    background-color: #007bff; /* Màu xanh dương */
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Nút Phụ/Cảnh báo (Update) */
+.btn-warning {
+    background-color: #ffc107; /* Màu vàng */
+    color: #333;
+}
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Nút Nguy hiểm (Remove Item) */
+.btn-danger {
+    background-color: #dc3545; /* Màu đỏ */
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Nút Tiếp tục (Continue Shopping) */
+.btn-success {
+    background-color: #28a745; /* Màu xanh lá cây */
+    color: white;
+}
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+/* Sử dụng cho input type="submit" của form đăng ký */
+.margin_left {
+    margin-left: 110px; /* Đẩy nút sang bên phải, căn chỉnh với các input */
+}
+
+/* Định dạng riêng cho input Số lượng trong giỏ hàng */
+.cart-quantity {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Định dạng cho liên kết MP3 */
+td a {
+    color: #6f42c1; /* Màu tím */
+    text-decoration: none;
+}
+td a:hover {
+    text-decoration: underline;
+}
